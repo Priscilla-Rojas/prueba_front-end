@@ -1,0 +1,272 @@
+:root {
+    --celeste-opaco: #4C89A4;
+    --violeta: #6932DE;
+    --celeste:#01aefd;
+    --amarillo:#dfec46;
+    --background: #EBEBEB;
+}
+@font-face {
+    font-family: Gilrcoy-bold;
+    src: url(assets/fonts/Gilroy-Bold.woff);
+}
+@font-face {
+    font-family: Gilrcoy-regular;
+    src: url(assets/fonts/Gilroy-Medium.woff);
+}
+@font-face {
+    font-family: Gilrcoy-ligth;
+    src: url(assets/fonts/Gilroy-Light.woff);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Gilrcoy-bold;
+}
+header, .nav, .nav article, .info-vacuna, .info-container div, .you-now.you-now, .article, footer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    overflow: hidden;
+}
+header {
+    width: 100%;
+    min-height: 100px;
+    justify-content: space-evenly;
+}
+.logo {
+    width: 180px;
+    height: 100%;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.nav {
+    width: max-conten;
+    justify-content: center;
+}
+.nav article {
+    width: max-content;
+    margin-right: 10px;
+}
+.nav article img {
+    width: 25px;
+}
+.nav article p {
+    margin: 5px;
+    color: var(--celeste-opaco);
+}
+/* Slider */
+.container-slider {
+    width: 100%;
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    position: relative;
+}
+.slider {
+    display: flex;
+    width: 300%;
+    height: 100%;
+}
+.slider__section,
+.slider__section figure{
+    width: 100%;
+    height: 100%;
+}
+
+.slider__section figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider__btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    color: gray;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider__btn:hover {
+    color: black;
+}
+.slider__btn--left{
+    left: 10px;
+}
+.slider__btn--right {
+    right: 10px;
+}
+.info-vacuna{
+    width: 100%;
+    height: max-content;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.info-vacuna h2,
+.you-now h2,
+.article h2{
+    margin: 50px auto;
+    width: 80%;
+    text-align: center;
+    color: var(--violeta);
+    font-family: Gilrcoy-bold;
+    padding: 0 15%;
+    font-size: 1.8rem;
+}
+.info-container{
+    width: 90%;
+    max-width: 350px;
+    height: 220px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    padding: 30px 40px;
+    font-family: Gilrcoy-regular;
+    margin: 10px;
+}
+.violet{
+    background-color: var(--violeta);
+} 
+.ligth-blue{
+    background-color: var(--celeste);
+}
+.info-container div img{    
+    width: 25px;
+    margin-right: 10px;
+}
+.info-container div h3{
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+}
+.info-container p{
+    margin:  10px 0;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+.button{
+    background-color: #fb9f00;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.you-now{
+    width: 100%;
+    height: max-content;
+    background-color: var(--background);
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.you-now h2,
+.article h2{
+    color: var(--celeste);
+}
+.you-now p{
+    min-width: 300px;
+    width: 45%;
+    margin-right: 20px;
+    color: var(--celeste-opaco);
+    font-family: Gilrcoy-regular;
+    font-size: 1.1rem;
+}
+.you-now p b{
+    font-family: Gilrcoy-bold;
+    background-color: #e0ebef;
+    padding: 1px;
+}
+.article{
+    width: 100%;
+    height: max-content;
+    justify-content: center;
+    padding-bottom: 150px;
+    margin: 5px;
+}
+.article article{
+    min-height: 350px;
+    height: max-content;
+    padding: 20px 15px;
+    border-radius: 10px;
+    margin: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.article article:nth-child(2){
+    min-width: 300px;
+    width: 25%;
+    background-image: url(assets/img/enfermedades_thumb.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.article article:nth-child(3){
+    min-width: 300px;
+    width: 38%;
+    background-image: url(assets/img/articulos_thumb.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 0;
+}
+.article article img{
+    width: 40px;
+}
+.article article h3{
+    color: var(--amarillo);
+    font-size: 1.3rem;
+    font-family: Gilrcoy-regular;
+    letter-spacing: 2px;
+    margin: 15px 0;
+}
+.article article p{
+    max-width: 300px;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    line-height: 2rem;
+}
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: var(--background);
+    justify-content: space-evenly;
+}
+footer p{
+    width: 40%;
+    color: rgb(110, 110, 110);
+    font-size: .8rem;
+}
+footer img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .info-vacuna h2, .you-now h2, .article h2{
+        width: 100%;
+    }
+    .you-now p{
+        text-align: justify;
+        align-self: flex-start;
+        margin: 10px;
+    }
+}
