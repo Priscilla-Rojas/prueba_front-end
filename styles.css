@@ -263,7 +263,7 @@ footer img{
 @media (max-width: 768px) {
     .info-vacuna h2, .you-now h2, .article h2{
         width: 100%;
-        padding: 0;
+        padding: 0 20px;
     }
     .you-now p{
         text-align: justify;
