@@ -192,10 +192,9 @@ header {
     height: 250px;
 }
 .boy{
-    top: -8%;
+    top: -5%;
     right: 10%;
-    height: 150px;
-    transform: rotateZ(340deg);
+    height: 120px;
 }
 .molecula-gray{
     width: 180px;

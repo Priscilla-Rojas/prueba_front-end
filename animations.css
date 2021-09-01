@@ -4,6 +4,9 @@
 .entradaIzquierda{
     animation: entradaIzquierda 1s ease-in 1s forwards;
 }
+.girl.entradaDerecha{
+    animation-delay: 8s;
+}
 .entradaDerecha{
     animation: entradaDerecha 1s ease-in 2s forwards;
 }

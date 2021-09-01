@@ -70,5 +70,4 @@ window.addEventListener("scroll", ()=>{
 window.addEventListener("scroll", ()=>{
     let girl= document.querySelector('.girl');
     girl.classList.add("entradaDerecha", window.scrollY > 1500);
-    // console.log(window.scrollY)
 });
