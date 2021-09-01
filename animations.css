@@ -1,0 +1,136 @@
+.desvanecer{
+    animation: mostrar 1s ease-in 500ms forwards;
+}
+.entradaIzquierda{
+    animation: entradaIzquierda 1s ease-in 1s forwards;
+}
+.entradaDerecha{
+    animation: entradaDerecha 1s ease-in 2s forwards;
+}
+.rotate{
+    animation: rotate 2s ease-in  forwards;
+}
+.rotate-circle{
+    animation: rotateCircle 5s infinite linear;
+}
+.molecula-green{
+    animation-delay: 2s;
+}
+.volar{
+    animation: volar 5s 5s linear;
+}
+
+@keyframes mostrar{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    50%{
+        opacity: 0.2;
+        visibility: visible ;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+@keyframes entradaIzquierda{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-50vw);
+    }
+    50%{
+        opacity: 0.2;
+        visibility: visible ;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+@keyframes entradaDerecha{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(50vw);
+    }
+    50%{
+        opacity: 0.5;
+        visibility: visible ;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+@keyframes rotate{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+        background-color: #808080 ;
+        transform: rotateX(180deg);
+    }
+    50%{
+        opacity: 0.2;
+        visibility: visible ;
+        transform: rotateX(90deg);
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+        background-color: #EBEBEB;
+        transform: rotateX(0deg);
+    }
+}
+@keyframes rotateCircle {
+    0%{
+        transform: rotateZ(0deg);
+        transform: scale(.5);
+    }
+    25%{
+        transform: rotateZ(90deg);
+        transform: scale(.8);
+    }
+    50%{
+        transform: rotateY(180deg);
+        transform: scale(1);
+    }
+    75%{
+        transform: rotateZ(270deg);
+        transform: scale(.8);
+    }
+    100%{
+        transform: rotateZ(360deg);
+        transform: scale(.5);
+    }
+}
+@keyframes volar {
+    0%{
+        transform: translateX(0)
+    }
+    25%{
+        transform: translateX(-500px)
+            rotateY(0deg);
+
+        
+    }
+    50%{
+        transform: translate(-1000px)
+            rotateY(0deg);
+    }
+    75%{
+        transform: translateX(-500px)
+        rotateY(180deg);
+    }
+    100%{
+        transform: translateX(0)
+        rotateY(0);
+    }
+}
