@@ -5,7 +5,7 @@
     animation: entradaIzquierda 1s ease-in 1s forwards;
 }
 .girl.entradaDerecha{
-    animation-delay: 8s;
+    animation-delay: 6s;
 }
 .entradaDerecha{
     animation: entradaDerecha 1s ease-in 2s forwards;
@@ -119,17 +119,17 @@
         transform: translateX(0)
     }
     25%{
-        transform: translateX(-500px)
+        transform: translateX(-50vw)
             rotateY(0deg);
 
         
     }
     50%{
-        transform: translate(-1000px)
+        transform: translate(-100vw)
             rotateY(0deg);
     }
     75%{
-        transform: translateX(-500px)
+        transform: translateX(-50vw)
         rotateY(180deg);
     }
     100%{

@@ -194,7 +194,7 @@ header {
 .boy{
     top: -5%;
     right: 10%;
-    height: 120px;
+    height: 120px;z-index: 1;
 }
 .molecula-gray{
     width: 180px;
@@ -315,5 +315,9 @@ footer img{
         text-align: justify;
         align-self: flex-start;
         margin: 10px;
+    }
+    .boy{
+        top: -3%;
+        right: 0;
     }
 }
