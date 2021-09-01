@@ -278,11 +278,16 @@ header {
     width: 40px;
 }
 .article article h3{
-    color: var(--amarillo);
     font-size: 1.3rem;
     font-family: Gilrcoy-regular;
     letter-spacing: 2px;
     margin: 15px 0;
+}
+.article1 h3{
+    color: var(--amarillo);
+}
+.article2  h3{
+    color: #fccb35;
 }
 .article article p{
     max-width: 300px;
