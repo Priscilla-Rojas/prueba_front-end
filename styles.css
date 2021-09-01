@@ -35,6 +35,7 @@ header {
     width: 100%;
     min-height: 100px;
     justify-content: space-evenly;
+    padding: 2px;
 }
 .logo {
     width: 180px;
