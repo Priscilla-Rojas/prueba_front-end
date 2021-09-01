@@ -39,7 +39,7 @@ btnRight.addEventListener('mouseover', ()=>{
 btnLeft.addEventListener('mouseover', ()=>{
     clearInterval(automatic);
 });
-slider.addEventListener('mouseout',()=>{
+slider.addEventListener('mouseleave',()=>{
     automatic = setInterval(()=>{
         moverDerecha();
     }, 3000);
