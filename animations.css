@@ -5,7 +5,7 @@
     animation: entradaIzquierda 1s ease-in forwards;
 }
 .entradaDerecha{
-    animation: entradaDerecha 1s ease-in 1s forwards;
+    animation: entradaDerecha 1s ease-in forwards;
 }
 .rotate{
     animation: rotate 2s ease-in  forwards;

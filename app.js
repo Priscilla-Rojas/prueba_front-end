@@ -74,7 +74,7 @@ window.addEventListener("scroll", ()=>{
     let ligthBlue= document.querySelector('.ligth-blue');
     let positionObject = ligthBlue.getBoundingClientRect().top;
     // console.log(positionObject);
-    let tamañoWindow = window.innerHeight/3;
+    let tamañoWindow = window.innerHeight/2;
 
     if(positionObject < tamañoWindow){
         ligthBlue.classList.add("entradaDerecha");
@@ -95,7 +95,7 @@ window.addEventListener("scroll", ()=>{
     let girl= document.querySelector('.girl');
     let positionObject = girl.getBoundingClientRect().top;
     console.log(positionObject);
-    let tamañoWindow = window.innerHeight/2;
+    let tamañoWindow = window.innerHeight/1.5;
     if(positionObject < tamañoWindow){
         girl.classList.add("entradaDerecha");
     }
