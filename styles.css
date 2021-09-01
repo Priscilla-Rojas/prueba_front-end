@@ -61,11 +61,18 @@ header {
     color: var(--celeste-opaco);
 }
 /* Slider */
+.container-slider,
+.info-vacuna h2{
+    opacity: 0;
+    visibility: hidden;
+}
 .container-slider {
     width: 100%;
     height: calc(100vh - 100px);
     overflow: hidden;
     position: relative;
+    transition: all  3s linear;
+    
 }
 .slider {
     display: flex;
@@ -124,6 +131,9 @@ header {
     padding: 0 15%;
     font-size: 1.8rem;
 }
+.info-vacuna h2{
+    transform: translateY(-100%);
+}
 .info-container{
     width: 90%;
     max-width: 350px;
@@ -140,9 +150,11 @@ header {
 }
 .violet{
     background-color: var(--violeta);
+    transform: translateX(-100vw);
 } 
 .ligth-blue{
     background-color: var(--celeste);
+    transform: translateX(100vw);
 }
 .info-container div img{    
     width: 25px;
@@ -167,12 +179,46 @@ header {
     text-decoration: none;
     letter-spacing: 1px;
 }
+.container-imgs{
+    position: relative;
+}
+.container-imgs span img{
+    position: absolute;
+    z-index: 1;
+}
+.girl{
+    bottom: 0;
+    left: 8%;
+    height: 250px;
+}
+.boy{
+    top: -8%;
+    right: 10%;
+    height: 150px;
+    transform: rotateZ(340deg);
+}
+.molecula-gray{
+    width: 180px;
+    top: 25%;
+    left: 4%;
+    z-index: 1;
+}
+.molecula-green{
+    top: 18%;
+    right: 10%;
+    height: 80px;
+}
+.molecula-gray-small{
+    width: 40px;
+    top: 10%;
+    left: 9%;
+}
 .you-now{
     width: 100%;
     height: max-content;
     background-color: var(--background);
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 .you-now h2,
 .article h2{
@@ -180,11 +226,13 @@ header {
 }
 .you-now p{
     min-width: 300px;
-    width: 45%;
+    width: 35%;
     margin-right: 20px;
     color: var(--celeste-opaco);
     font-family: Gilrcoy-regular;
     font-size: 1.1rem;
+    z-index: 100;
+    position: relative;
 }
 .you-now p b{
     font-family: Gilrcoy-bold;
@@ -196,7 +244,6 @@ header {
     height: max-content;
     justify-content: center;
     padding-bottom: 150px;
-    margin: 5px;
 }
 .article article{
     min-height: 350px;
@@ -221,7 +268,7 @@ header {
 .article article:nth-child(3){
     min-width: 300px;
     width: 38%;
-    background-image: url(assets/img/articulos_thumb.jpg);
+    background: url(assets/img/articulos_thumb.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
