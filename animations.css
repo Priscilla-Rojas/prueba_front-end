@@ -2,13 +2,10 @@
     animation: mostrar 1s ease-in 500ms forwards;
 }
 .entradaIzquierda{
-    animation: entradaIzquierda 1s ease-in 1s forwards;
-}
-.girl.entradaDerecha{
-    animation-delay: 6s;
+    animation: entradaIzquierda 1s ease-in forwards;
 }
 .entradaDerecha{
-    animation: entradaDerecha 1s ease-in 2s forwards;
+    animation: entradaDerecha 1s ease-in 1s forwards;
 }
 .rotate{
     animation: rotate 2s ease-in  forwards;
@@ -20,7 +17,7 @@
     animation-delay: 2s;
 }
 .volar{
-    animation: volar 5s 5s linear;
+    animation: volar 5s linear;
 }
 
 @keyframes mostrar{

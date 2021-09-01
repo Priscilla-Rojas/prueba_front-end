@@ -63,7 +63,8 @@ header {
 }
 /* Slider */
 .container-slider,
-.info-vacuna h2{
+.info-vacuna h2,
+.girl{
     opacity: 0;
     visibility: hidden;
 }

@@ -51,23 +51,52 @@ window.addEventListener("load", ()=>{
     containerSlider.classList.add("desvanecer");
 });
 window.addEventListener("scroll", ()=>{
-    const titleInfo = document.querySelector(".info-vacuna > h2");
-    titleInfo.classList.add("desvanecer", window.scrollY >= 200);
+    let animation = document.querySelector(".info-vacuna > h2");
+    let positionObject = animation.getBoundingClientRect().top;
+    // console.log(positionObject);
+    let tamañoWindow = window.innerHeight/3;
+
+    if(positionObject < tamañoWindow){
+        animation.classList.add("desvanecer");
+    }
 });
 window.addEventListener("scroll", ()=>{
     let violet= document.querySelector('.violet');
-    violet.classList.add("entradaIzquierda", window.scrollY >= 350);
+    let positionObject = violet.getBoundingClientRect().top;
+    // console.log(positionObject);
+    let tamañoWindow = window.innerHeight/3;
+
+    if(positionObject < tamañoWindow){
+        violet.classList.add("entradaIzquierda");
+    }
 });
 window.addEventListener("scroll", ()=>{
     let ligthBlue= document.querySelector('.ligth-blue');
-    ligthBlue.classList.add("entradaDerecha", scrollY >= 400);
+    let positionObject = ligthBlue.getBoundingClientRect().top;
+    // console.log(positionObject);
+    let tamañoWindow = window.innerHeight/3;
+
+    if(positionObject < tamañoWindow){
+        ligthBlue.classList.add("entradaDerecha");
+    }
 });
 window.addEventListener("scroll", ()=>{
     let boy= document.querySelector('.boy');
-    boy.classList.add("volar", window.scrollY > 1050);
+    let positionObject = boy.getBoundingClientRect().top;
+    // console.log(positionObject);
+    let tamañoWindow = window.innerHeight/3;
+
+    if(positionObject < tamañoWindow){
+        boy.classList.add("volar");
+    }
     // console.log(window.scrollY)
 });
 window.addEventListener("scroll", ()=>{
     let girl= document.querySelector('.girl');
-    girl.classList.add("entradaDerecha", window.scrollY > 1500);
+    let positionObject = girl.getBoundingClientRect().top;
+    console.log(positionObject);
+    let tamañoWindow = window.innerHeight/2;
+    if(positionObject < tamañoWindow){
+        girl.classList.add("entradaDerecha");
+    }
 });
