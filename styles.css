@@ -315,11 +315,7 @@ footer img{
     .container-slider {
         height: 300px;
     }
-    .slider__section figure img {
-        width: 100%;
-        height: 100%;
-        object-position: -100px;    
-    }
+    
     .info-vacuna h2, .you-now h2, .article h2{
         width: 100%;
         padding: 0 20px;
@@ -339,4 +335,9 @@ footer img{
         height: 200px;
     }
     
+}
+@media (max-width: 480px){
+    .slider__section figure img {
+        object-position: -100px;    
+    }
 }
